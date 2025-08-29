@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.cloudplus.tool</groupId>
+        <artifactId>cloudplus-tool</artifactId>
+        <version>{revision}</version>
+    </parent>
+
+    <artifactId>cloudplus-tool-starter</artifactId>
+    <packaging>jar</packaging>
+    <version>{revision}</version>
+    <name>CloudPlus Tool Starter</name>
+    <description>CloudPlus通用工具服务 - 启动器模块</description>
+
+
+    <properties>
+        <java.version>24</java.version>
+    </properties>
+    <dependencies>
+        <!-- 内部依赖 -->
+        <dependency>
+            <groupId>com.cloudplus.tool</groupId>
+            <artifactId>cloudplus-tool-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.cloudplus.tool</groupId>
+            <artifactId>cloudplus-tool-data</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.cloudplus.tool</groupId>
+            <artifactId>cloudplus-tool-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.cloudplus.tool</groupId>
+            <artifactId>cloudplus-tool-web</artifactId>
+        </dependency>
+
+        <!-- 自动配置 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
